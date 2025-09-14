@@ -1,0 +1,359 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html dir="ltr" lang="ja-JP" id="garakuta-net">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>PCCS相互変換表 - garakuta.net</title>
+
+	<meta name="description" content="PCCSトーン一覧表です。" />
+	<meta name="keywords" content="PCCS,Design,Color,Coulor" />
+	<meta name="author" content="Takahiro Onodera" />
+	<meta name="copyright" content="Copyright(C) Takahiro Onodera" />
+
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link rel="stylesheet" type="text/css" charset="utf-8" href="/css/base.css">
+	<link rel="stylesheet" type="text/css" charset="utf-8" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" charset="utf-8" href="/color/pccs/css/pccs-mx.css">
+
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/color/pccs/js/PCCS.js"></script>
+	<script type="text/javascript" src="/color/pccs/js/Sprite.js"></script>
+	<script type="text/javascript" src="/color/pccs/js/init.js"></script>
+	<script type="text/javascript" src="/color/pccs/js/main.js"></script>
+	<script type="text/javascript" src="/color/pccs/js/tooltip.js"></script>
+
+</head>
+
+<body><div id="contener">
+
+<!-- ---------- Header ---------- -->
+<div id="pageheader">
+	<a id="a2top" href="/index.html" title="サイトトップへ"><img src="/img/logo01s.gif" alt="GARAKUTA.net" width="256" height="32" /></a>
+</div>
+<h1>PCCS・RGB変換表</h1>
+
+<div id="pagebody">
+
+<div class="lead">
+PCCS各色とマンセル、RGB値の変換表です。線形補間を用いてマンセル値からxyY値（標準イルミナントC・CIE1931 2度視野観測者）を求め、Bradford変換を経てsRGBへ変換しました。各RGB値は標準イルミナントD65・sRGBでの値です。<br />
+</div>
+
+<table class="Vivid">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#b91f57" class="b">v1</th><td>10RP 4/13.5</td><td>185, 31, 87</td><td>#b91f57</td><td></tr>
+<tr><th style="background:#d02f48" class="b">v2</th><td>4R 4.5/14</td><td>208, 47, 72</td><td>#d02f48</td></tr>
+<tr><th style="background:#dd443b" class="b">v3</th><td>7R 5/14</td><td>221, 68, 59</td><td>#dd443b</td></tr>
+<tr><th style="background:#e95b23" class="b">v4</th><td>10R 5.5/14</td><td>233, 91, 35</td><td>#e95b23</td></tr>
+<tr><th style="background:#e67800" class="b">v5</th><td>4YR 6/13.5</td><td>230, 120, 0</td><td>#e67800</td></tr>
+<tr><th style="background:#f49d00" class="b">v6</th><td>8YR 7/13</td><td>244, 157, 0</td><td>#f49d00</td></tr>
+<tr><th style="background:#f1b500" class="b">v7</th><td>2Y 7.5/13</td><td>241, 181, 0</td><td>#f1b500</td></tr>
+<tr><th style="background:#eec900" class="b">v8</th><td>5Y 8/13</td><td>238, 201, 0</td><td>#eec900</td></tr>
+<tr><th style="background:#d2c100" class="b">v9</th><td>8Y 7.5/12</td><td>210, 193, 0</td><td>#d2c100</td></tr>
+<tr><th style="background:#a8bb00" class="b">v10</th><td>3GY 7/12</td><td>168, 187, 0</td><td>#a8bb00</td></tr>
+<tr><th style="background:#58a91d" class="b">v11</th><td>8GY 6/11.5</td><td>88, 169, 29</td><td>#58a91d</td></tr>
+<tr><th style="background:#00a15a" class="b">v12</th><td>3G 5.5/11</td><td>0, 161, 90</td><td>#00a15a</td></tr>
+<tr><th style="background:#00926e" class="b">v13</th><td>9G 5/10.5</td><td>0, 146, 110</td><td>#00926e</td></tr>
+<tr><th style="background:#00857f" class="w">v14</th><td>5BG 4.5/10</td><td>0, 133, 127</td><td>#00857f</td></tr>
+<tr><th style="background:#007488" class="w">v15</th><td>10BG 4/10</td><td>0, 116, 136</td><td>#007488</td></tr>
+<tr><th style="background:#00709b" class="w">v16</th><td>5B 4/10</td><td>0, 112, 155</td><td>#00709b</td></tr>
+<tr><th style="background:#00609c" class="w">v17</th><td>10B 3.5/10.5</td><td>0, 96, 156</td><td>#00609c</td></tr>
+<tr><th style="background:#005ba5" class="w">v18</th><td>3PB 3.5/11.5</td><td>0, 91, 165</td><td>#005ba5</td></tr>
+<tr><th style="background:#1a54a5" class="w">v19</th><td>6PB 3.5/11.5</td><td>26, 84, 165</td><td>#1a54a5</td></tr>
+<tr><th style="background:#534aa0" class="w">v20</th><td>9PB 3.5/11.5</td><td>83, 74, 160</td><td>#534aa0</td></tr>
+<tr><th style="background:#703f96" class="w">v21</th><td>3P 3.5/11.5</td><td>112, 63, 150</td><td>#703f96</td></tr>
+<tr><th style="background:#81378a" class="w">v22</th><td>7P 3.5/11.5</td><td>129, 55, 138</td><td>#81378a</td></tr>
+<tr><th style="background:#8f2e7c" class="w">v23</th><td>1RP 3.5/11.5</td><td>143, 46, 124</td><td>#8f2e7c</td></tr>
+<tr><th style="background:#ad2e6c" class="w">v24</th><td>6RP 4/12.5</td><td>173, 46, 108</td><td>#ad2e6c</td></tr>
+</tbody>
+</table>
+
+<table class="Bright">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#ef6c70" class="b">b2</th><td>4R 6/12</td><td>239, 108, 112</td><td>#ef6c70</td></tr>
+<tr><th style="background:#fa8155" class="b">b4</th><td>10R 6.5/11.5</td><td>250, 129, 85</td><td>#fa8155</td></tr>
+<tr><th style="background:#ffad36" class="b">b6</th><td>8YR 7.5/11.5</td><td>255, 173, 54</td><td>#ffad36</td></tr>
+<tr><th style="background:#fad831" class="b">b8</th><td>5Y 8.5/11</td><td>250, 216, 49</td><td>#fad831</td></tr>
+<tr><th style="background:#b7c82b" class="b">b10</th><td>3GY 7.5/10</td><td>183, 200, 43</td><td>#b7c82b</td></tr>
+<tr><th style="background:#41b879" class="b">b12</th><td>3G 6.5/9</td><td>65, 184, 121</td><td>#41b879</td></tr>
+<tr><th style="background:#00aa9f" class="b">b14</th><td>5BG 6/8.5</td><td>0, 170, 159</td><td>#00aa9f</td></tr>
+<tr><th style="background:#0098b9" class="b">b16</th><td>5B 5.5/8.5</td><td>0, 152, 185</td><td>#0098b9</td></tr>
+<tr><th style="background:#2981c0" class="b">b18</th><td>3PB 5/10</td><td>41, 129, 192</td><td>#2981c0</td></tr>
+<tr><th style="background:#7574bc" class="b">b20</th><td>9PB 5/10</td><td>117, 116, 188</td><td>#7574bc</td></tr>
+<tr><th style="background:#a165a8" class="b">b22</th><td>7P 5/10</td><td>161, 101, 168</td><td>#a165a8</td></tr>
+<tr><th style="background:#d0678e" class="b">b24</th><td>6RP 5.5/10.5</td><td>208, 103, 142</td><td>#d0678e</td></tr>
+</tbody>
+</table>
+
+<table class="Soft">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#c53f4d" class="b">s2</th><td>4R 4.5/12</td><td>197, 63, 77</td><td>#c53f4d</td></tr>
+<tr><th style="background:#cc572e" class="b">s4</th><td>10R 5/11.5</td><td>204, 87, 46</td><td>#cc572e</td></tr>
+<tr><th style="background:#e19215" class="b">s6</th><td>8YR 6.5/11.5</td><td>225, 146, 21</td><td>#e19215</td></tr>
+<tr><th style="background:#debc03" class="b">s8</th><td>5Y 7.5/11</td><td>222, 188, 3</td><td>#debc03</td></tr>
+<tr><th style="background:#9cad00" class="b">s10</th><td>3GY 6.5/10</td><td>156, 173, 0</td><td>#9cad00</td></tr>
+<tr><th style="background:#008f56" class="b">s12</th><td>3G 5/9</td><td>0, 143, 86</td><td>#008f56</td></tr>
+<tr><th style="background:#00827c" class="w">s14</th><td>5BG 4.5/8.5</td><td>0, 130, 124</td><td>#00827c</td></tr>
+<tr><th style="background:#006f92" class="w">s16</th><td>5B 4/8.5</td><td>0, 111, 146</td><td>#006f92</td></tr>
+<tr><th style="background:#005b9b" class="w">s18</th><td>3PB 3.5/10</td><td>0, 91, 155</td><td>#005b9b</td></tr>
+<tr><th style="background:#534c98" class="w">s20</th><td>9PB 3.5/10</td><td>83, 76, 152</td><td>#534c98</td></tr>
+<tr><th style="background:#7c3d84" class="w">s22</th><td>7P 3.5/10</td><td>124, 61, 132</td><td>#7c3d84</td></tr>
+<tr><th style="background:#a33c6a" class="w">s24</th><td>6RP 4/10.5</td><td>163, 60, 106</td><td>#a33c6a</td></tr>
+</tbody>
+</table>
+
+<table class="Deep">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#a61d39" class="w">dp2</th><td>4R 3.5/11.5</td><td>166, 29, 57</td><td>#a61d39</td></tr>
+<tr><th style="background:#ab3d1d" class="w">dp4</th><td>10R 4/11</td><td>171, 61, 29</td><td>#ab3d1d</td></tr>
+<tr><th style="background:#b16c00" class="w">dp6</th><td>8YR 5/11</td><td>177, 108, 0</td><td>#b16c00</td></tr>
+<tr><th style="background:#b39300" class="w">dp8</th><td>5Y 6/10.5</td><td>179, 147, 0</td><td>#b39300</td></tr>
+<tr><th style="background:#748400" class="w">dp10</th><td>3GY 5/9.5</td><td>116, 132, 0</td><td>#748400</td></tr>
+<tr><th style="background:#007243" class="w">dp12</th><td>3G 4/8</td><td>0, 114, 67</td><td>#007243</td></tr>
+<tr><th style="background:#006664" class="w">dp14</th><td>5BG 3.5/8</td><td>0, 102, 100</td><td>#006664</td></tr>
+<tr><th style="background:#005476" class="w">dp16</th><td>5B 3/8</td><td>0, 84, 118</td><td>#005476</td></tr>
+<tr><th style="background:#004280" class="w">dp18</th><td>3PB 2.5/9.5</td><td>0, 66, 128</td><td>#004280</td></tr>
+<tr><th style="background:#3e337b" class="w">dp20</th><td>9PB 2.5/9.5</td><td>62, 51, 123</td><td>#3e337b</td></tr>
+<tr><th style="background:#612469" class="w">dp22</th><td>7P 2.5/9.5</td><td>97, 36, 105</td><td>#612469</td></tr>
+<tr><th style="background:#861d55" class="w">dp24</th><td>6RP 3/10</td><td>134, 29, 85</td><td>#861d55</td></tr>
+</tbody>
+</table>
+
+<table class="LightPlus">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#f19896" class="b">lt<sup>+</sup>2</th><td>4R 7/8</td><td>241, 152, 150</td><td>#f19896</td></tr>
+<tr><th style="background:#ffa787" class="b">lt<sup>+</sup>4</th><td>10R 7.5/8</td><td>255, 167, 135</td><td>#ffa787</td></tr>
+<tr><th style="background:#ffbe71" class="b">lt<sup>+</sup>6</th><td>8YR 8/8</td><td>255, 190, 113</td><td>#ffbe71</td></tr>
+<tr><th style="background:#f2d96e" class="b">lt<sup>+</sup>8</th><td>5Y 8.5/7.5</td><td>242, 217, 110</td><td>#f2d96e</td></tr>
+<tr><th style="background:#c7d36d" class="b">lt<sup>+</sup>10</th><td>3GY 8/7</td><td>199, 211, 109</td><td>#c7d36d</td></tr>
+<tr><th style="background:#85ce9e" class="b">lt<sup>+</sup>12</th><td>3G 7.5/6</td><td>133, 206, 158</td><td>#85ce9e</td></tr>
+<tr><th style="background:#62c0b5" class="b">lt<sup>+</sup>14</th><td>5BG 7/6</td><td>98, 192, 181</td><td>#62c0b5</td></tr>
+<tr><th style="background:#5bafc4" class="b">lt<sup>+</sup>16</th><td>5B 6.5/6</td><td>91, 175, 196</td><td>#5bafc4</td></tr>
+<tr><th style="background:#6c9ac5" class="b">lt<sup>+</sup>18</th><td>3PB 6/7</td><td>108, 154, 197</td><td>#6c9ac5</td></tr>
+<tr><th style="background:#9091c3" class="b">lt<sup>+</sup>20</th><td>9PB 6/7</td><td>144, 145, 195</td><td>#9091c3</td></tr>
+<tr><th style="background:#b088b5" class="b">lt<sup>+</sup>22</th><td>7P 6/7</td><td>176, 136, 181</td><td>#b088b5</td></tr>
+<tr><th style="background:#d98ea5" class="b">lt<sup>+</sup>24</th><td>6RP 6.5/7.5</td><td>217, 142, 165</td><td>#d98ea5</td></tr>
+</tbody>
+</table>
+
+<table class="Light">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#f6aba5" class="b">lt2</th><td>5R 7.5/6.5</td><td>246, 171, 165</td><td>#f6aba5</td></tr>
+<tr><th style="background:#ffb99e" class="b">lt4</th><td>10R 8/6.5</td><td>255, 185, 158</td><td>#ffb99e</td></tr>
+<tr><th style="background:#ffce90" class="b">lt6</th><td>7.5YR 8.5/6.5</td><td>255, 206, 144</td><td>#ffce90</td></tr>
+<tr><th style="background:#fbe68f" class="b">lt8</th><td>5Y 9/6</td><td>251, 230, 143</td><td>#fbe68f</td></tr>
+<tr><th style="background:#d8df92" class="b">lt10</th><td>2.5GY 8.5/5</td><td>216, 223, 146</td><td>#d8df92</td></tr>
+<tr><th style="background:#9cd9ac" class="b">lt12</th><td>2.5G 8/5</td><td>156, 217, 172</td><td>#9cd9ac</td></tr>
+<tr><th style="background:#7eccc1" class="b">lt14</th><td>5BG 7.5/5</td><td>126, 204, 193</td><td>#7eccc1</td></tr>
+<tr><th style="background:#79baca" class="b">lt16</th><td>5B 7/5</td><td>121, 186, 202</td><td>#79baca</td></tr>
+<tr><th style="background:#83a7c8" class="b">lt18</th><td>2.5PB 6.5/5.5</td><td>131, 167, 200</td><td>#83a7c8</td></tr>
+<tr><th style="background:#a29fc7" class="b">lt20</th><td>10PB 6.5/5.5</td><td>162, 159, 199</td><td>#a29fc7</td></tr>
+<tr><th style="background:#b89ab8" class="b">lt22</th><td>7.5P 6.5/5</td><td>184, 154, 184</td><td>#b89ab8</td></tr>
+<tr><th style="background:#daa0b3" class="b">lt24</th><td>5RP 7/6</td><td>218, 160, 179</td><td>#daa0b3</td></tr>
+</tbody>
+</table>
+
+<table class="Soft">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#ca8281" class="b">sf2</th><td>4R 6/6.5</td><td>202, 130, 129</td><td>#ca8281</td></tr>
+<tr><th style="background:#da927a" class="b">sf4</th><td>10R 6.5/6.5</td><td>218, 146, 122</td><td>#da927a</td></tr>
+<tr><th style="background:#dba66b" class="b">sf6</th><td>8YR 7/6.5</td><td>219, 166, 107</td><td>#dba66b</td></tr>
+<tr><th style="background:#d3bd6c" class="b">sf8</th><td>5Y 7.5/6</td><td>211, 189, 108</td><td>#d3bd6c</td></tr>
+<tr><th style="background:#adb66b" class="b">sf10</th><td>3GY 7/5.5</td><td>173, 182, 107</td><td>#adb66b</td></tr>
+<tr><th style="background:#76b18a" class="b">sf12</th><td>3G 6.5/5</td><td>118, 177, 138</td><td>#76b18a</td></tr>
+<tr><th style="background:#54a39b" class="b">sf14</th><td>5BG 6/5</td><td>84, 163, 155</td><td>#54a39b</td></tr>
+<tr><th style="background:#5192a4" class="b">sf16</th><td>5B 5.5/5</td><td>81, 146, 164</td><td>#5192a4</td></tr>
+<tr><th style="background:#5d7ea0" class="b">sf18</th><td>3PB 5/5.5</td><td>93, 126, 160</td><td>#5d7ea0</td></tr>
+<tr><th style="background:#7878a0" class="b">sf20</th><td>9PB 5/5.5</td><td>120, 120, 160</td><td>#7878a0</td></tr>
+<tr><th style="background:#907194" class="b">sf22</th><td>7P 5/5.5</td><td>144, 113, 148</td><td>#907194</td></tr>
+<tr><th style="background:#b4788b" class="b">sf24</th><td>6RP 5.5/6</td><td>180, 120, 139</td><td>#b4788b</td></tr>
+</tbody>
+</table>
+
+<table class="Dull">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#a35a5c" class="w">d2</th><td>4R 4.5/6.5</td><td>163, 90, 92</td><td>#a35a5c</td></tr>
+<tr><th style="background:#af6954" class="w">d4</th><td>10R 5/6.5</td><td>175, 105, 84</td><td>#af6954</td></tr>
+<tr><th style="background:#b37f46" class="w">d6</th><td>8YR 5.5/6.5</td><td>179, 127, 70</td><td>#b37f46</td></tr>
+<tr><th style="background:#ab9446" class="w">d8</th><td>5Y 6/6</td><td>171, 148, 70</td><td>#ab9446</td></tr>
+<tr><th style="background:#858f46" class="w">d10</th><td>3GY 5.5/5.5</td><td>133, 143, 70</td><td>#858f46</td></tr>
+<tr><th style="background:#4f8766" class="w">d12</th><td>3G 5/5</td><td>79, 135, 102</td><td>#4f8766</td></tr>
+<tr><th style="background:#2a7b76" class="w">d14</th><td>5BG 4.5/5</td><td>42, 123, 118</td><td>#2a7b76</td></tr>
+<tr><th style="background:#246a7d" class="w">d16</th><td>5B 4/5</td><td>36, 106, 125</td><td>#246a7d</td></tr>
+<tr><th style="background:#34597d" class="w">d18</th><td>3PB 3.5/5.5</td><td>52, 89, 125</td><td>#34597d</td></tr>
+<tr><th style="background:#54527c" class="w">d20</th><td>9PB 3.5/5.5</td><td>84, 82, 124</td><td>#54527c</td></tr>
+<tr><th style="background:#6c4a71" class="w">d22</th><td>7P 3.5/5.5</td><td>108, 74, 113</td><td>#6c4a71</td></tr>
+<tr><th style="background:#8b4f65" class="w">d24</th><td>6RP 4/6</td><td>139, 79, 101</td><td>#8b4f65</td></tr>
+</tbody>
+</table>
+
+<table class="Dark">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#692934" class="w">dk2</th><td>4R 2.5/6</td><td>105, 41, 52</td><td>#692934</td></tr>
+<tr><th style="background:#75362a" class="w">dk4</th><td>10R 3/6</td><td>117, 54, 42</td><td>#75362a</td></tr>
+<tr><th style="background:#794d1c" class="w">dk6</th><td>8YR 3.5/6</td><td>121, 77, 28</td><td>#794d1c</td></tr>
+<tr><th style="background:#74601f" class="w">dk8</th><td>5Y 4/5.5</td><td>116, 96, 31</td><td>#74601f</td></tr>
+<tr><th style="background:#525b20" class="w">dk10</th><td>3GY 3.5/5</td><td>82, 91, 32</td><td>#525b20</td></tr>
+<tr><th style="background:#23523a" class="w">dk12</th><td>3G 3/4.5</td><td>35, 82, 58</td><td>#23523a</td></tr>
+<tr><th style="background:#004746" class="w">dk14</th><td>5BG 2.5/4.5</td><td>0, 71, 70</td><td>#004746</td></tr>
+<tr><th style="background:#004558" class="w">dk16</th><td>5B 2.5/4.5</td><td>0, 69, 88</td><td>#004558</td></tr>
+<tr><th style="background:#123452" class="w">dk18</th><td>3PB 2/5</td><td>18, 52, 82</td><td>#123452</td></tr>
+<tr><th style="background:#322d51" class="w">dk20</th><td>9PB 2/5</td><td>50, 45, 81</td><td>#322d51</td></tr>
+<tr><th style="background:#432848" class="w">dk22</th><td>7P 2/5</td><td>67, 40, 72</td><td>#432848</td></tr>
+<tr><th style="background:#612d46" class="w">dk24</th><td>6RP 2.5/5.5</td><td>97, 45, 70</td><td>#612d46</td></tr>
+</tbody>
+</table>
+
+<table class="PalePlus">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#e8c2bf" class="b">p<sup>+</sup>2</th><td>4R 8/3.5</td><td>232, 194, 191</td><td>#e8c2bf</td></tr>
+<tr><th style="background:#ebc2b5" class="b">p<sup>+</sup>4</th><td>10R 8/3.5</td><td>235, 194, 181</td><td>#ebc2b5</td></tr>
+<tr><th style="background:#f4d4b0" class="b">p<sup>+</sup>6</th><td>8YR 8.5/3.5</td><td>244, 212, 176</td><td>#f4d4b0</td></tr>
+<tr><th style="background:#f2e6b8" class="b">p<sup>+</sup>8</th><td>5Y 9/3</td><td>242, 230, 184</td><td>#f2e6b8</td></tr>
+<tr><th style="background:#d8ddad" class="b">p<sup>+</sup>10</th><td>3GY 8.5/3</td><td>216, 221, 173</td><td>#d8ddad</td></tr>
+<tr><th style="background:#aed4b9" class="b">p<sup>+</sup>12</th><td>3G 8/3</td><td>174, 212, 185</td><td>#aed4b9</td></tr>
+<tr><th style="background:#a6d4cc" class="b">p<sup>+</sup>14</th><td>5BG 8/3</td><td>166, 212, 204</td><td>#a6d4cc</td></tr>
+<tr><th style="background:#add1da" class="b">p<sup>+</sup>16</th><td>5B 8/3</td><td>173, 209, 218</td><td>#add1da</td></tr>
+<tr><th style="background:#afc0d1" class="b">p<sup>+</sup>18</th><td>3PB 7.5/3</td><td>175, 192, 209</td><td>#afc0d1</td></tr>
+<tr><th style="background:#bbbdd0" class="b">p<sup>+</sup>20</th><td>9PB 7.5/3</td><td>187, 189, 208</td><td>#bbbdd0</td></tr>
+<tr><th style="background:#c8b9c9" class="b">p<sup>+</sup>22</th><td>7P 7.5/3</td><td>200, 185, 201</td><td>#c8b9c9</td></tr>
+<tr><th style="background:#dec4ca" class="b">p<sup>+</sup>24</th><td>6RP 8/3</td><td>222, 196, 202</td><td>#dec4ca</td></tr>
+</tbody>
+</table>
+
+<table class="Pale">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#e7d5d4" class="b">p2</th><td>4R 8.5/2</td><td>231, 213, 212</td><td>#e7d5d4</td></tr>
+<tr><th style="background:#e9d5cf" class="b">p4</th><td>10R 8.5/2</td><td>233, 213, 207</td><td>#e9d5cf</td></tr>
+<tr><th style="background:#f6e3ce" class="b">p6</th><td>8YR 9/2</td><td>246, 227, 206</td><td>#f6e3ce</td></tr>
+<tr><th style="background:#efe6c6" class="b">p8</th><td>5Y 9/2</td><td>239, 230, 198</td><td>#efe6c6</td></tr>
+<tr><th style="background:#e6e9c6" class="b">p10</th><td>3GY 9/2</td><td>230, 233, 198</td><td>#e6e9c6</td></tr>
+<tr><th style="background:#c4e0cb" class="b">p12</th><td>3G 8.5/2</td><td>196, 224, 203</td><td>#c4e0cb</td></tr>
+<tr><th style="background:#bfe0d9" class="b">p14</th><td>5BG 8.5/2</td><td>191, 224, 217</td><td>#bfe0d9</td></tr>
+<tr><th style="background:#c6dde2" class="b">p16</th><td>5B 8.5/2</td><td>198, 221, 226</td><td>#c6dde2</td></tr>
+<tr><th style="background:#c2ccd5" class="b">p18</th><td>3PB 8/2</td><td>194, 204, 213</td><td>#c2ccd5</td></tr>
+<tr><th style="background:#c9cad5" class="b">p20</th><td>9PB 8/2</td><td>201, 202, 213</td><td>#c9cad5</td></tr>
+<tr><th style="background:#d0c8d1" class="b">p22</th><td>7P 8/2</td><td>208, 200, 209</td><td>#d0c8d1</td></tr>
+<tr><th style="background:#e4d5d9" class="b">p24</th><td>6RP 8.5/2</td><td>228, 213, 217</td><td>#e4d5d9</td></tr>
+</tbody>
+</table>
+
+<table class="LightGrayish">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#c0abaa" class="b">ltg2</th><td>4R 7/2</td><td>192, 171, 170</td><td>#c0abaa</td></tr>
+<tr><th style="background:#c1aba5" class="b">ltg4</th><td>10R 7/2</td><td>193, 171, 165</td><td>#c1aba5</td></tr>
+<tr><th style="background:#cebba8" class="b">ltg6</th><td>8YR 7.5/2</td><td>206, 187, 168</td><td>#cebba8</td></tr>
+<tr><th style="background:#c6bea1" class="b">ltg8</th><td>5Y 7.5/2</td><td>198, 190, 161</td><td>#c6bea1</td></tr>
+<tr><th style="background:#bdc1a2" class="b">ltg10</th><td>3GY 7.5/2</td><td>189, 193, 162</td><td>#bdc1a2</td></tr>
+<tr><th style="background:#9db6a5" class="b">ltg12</th><td>3G 7/2</td><td>157, 182, 165</td><td>#9db6a5</td></tr>
+<tr><th style="background:#98b6b1" class="b">ltg14</th><td>5BG 7/2</td><td>152, 182, 177</td><td>#98b6b1</td></tr>
+<tr><th style="background:#9eb4b9" class="b">ltg16</th><td>5B 7/2</td><td>158, 180, 185</td><td>#9eb4b9</td></tr>
+<tr><th style="background:#9ba5af" class="b">ltg18</th><td>3PB 6.5/2</td><td>155, 165, 175</td><td>#9ba5af</td></tr>
+<tr><th style="background:#a2a2af" class="b">ltg20</th><td>9PB 6.5/2</td><td>162, 162, 175</td><td>#a2a2af</td></tr>
+<tr><th style="background:#aba0ab" class="b">ltg22</th><td>7P 6.5/2</td><td>171, 160, 171</td><td>#aba0ab</td></tr>
+<tr><th style="background:#bdacb0" class="b">ltg24</th><td>6RP 7/2</td><td>189, 172, 176</td><td>#bdacb0</td></tr>
+</tbody>
+</table>
+
+<table class="Grayish">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#745c5c" class="w">g2</th><td>4R 4/2</td><td>116, 92, 92</td><td>#745c5c</td></tr>
+<tr><th style="background:#755c57" class="w">g4</th><td>10R 4/2</td><td>117, 92, 87</td><td>#755c57</td></tr>
+<tr><th style="background:#806c5c" class="w">g6</th><td>8YR 4.5/2</td><td>128, 108, 92</td><td>#806c5c</td></tr>
+<tr><th style="background:#786f57" class="w">g8</th><td>5Y 4.5/2</td><td>120, 111, 87</td><td>#786f57</td></tr>
+<tr><th style="background:#6e725a" class="w">g10</th><td>3GY 4.5/2</td><td>110, 114, 90</td><td>#6e725a</td></tr>
+<tr><th style="background:#53665a" class="w">g12</th><td>3G 4/2</td><td>83, 102, 90</td><td>#53665a</td></tr>
+<tr><th style="background:#4e6764" class="w">g14</th><td>5BG 4/2</td><td>78, 103, 100</td><td>#4e6764</td></tr>
+<tr><th style="background:#4f656c" class="w">g16</th><td>5B 4/2</td><td>79, 101, 108</td><td>#4f656c</td></tr>
+<tr><th style="background:#4c5765" class="w">g18</th><td>3PB 3.5/2</td><td>76, 87, 101</td><td>#4c5765</td></tr>
+<tr><th style="background:#565566" class="w">g20</th><td>9PB 3.5/2</td><td>86, 85, 102</td><td>#565566</td></tr>
+<tr><th style="background:#605262" class="w">g22</th><td>7P 3.5/2</td><td>96, 82, 98</td><td>#605262</td></tr>
+<tr><th style="background:#725c63" class="w">g24</th><td>6RP 4/2</td><td>114, 92, 99</td><td>#725c63</td></tr>
+</tbody>
+</table>
+
+<table class="DarkGrayish">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#3e2d30" class="w">dkg2</th><td>4R 2/1.5</td><td>62, 45, 48</td><td>#3e2d30</td></tr>
+<tr><th style="background:#3f2e2c" class="w">dkg4</th><td>10R 2/1.5</td><td>63, 46, 44</td><td>#3f2e2c</td></tr>
+<tr><th style="background:#4a3c32" class="w">dkg6</th><td>8YR 2.5/1.5</td><td>74, 60, 50</td><td>#4a3c32</td></tr>
+<tr><th style="background:#443e30" class="w">dkg8</th><td>5Y 2.5/1.5</td><td>68, 62, 48</td><td>#443e30</td></tr>
+<tr><th style="background:#3d4033" class="w">dkg10</th><td>3GY 2.5/1.5</td><td>61, 64, 51</td><td>#3d4033</td></tr>
+<tr><th style="background:#2a342e" class="w">dkg12</th><td>3G 2/1.5</td><td>42, 52, 46</td><td>#2a342e</td></tr>
+<tr><th style="background:#273434" class="w">dkg14</th><td>5BG 2/1.5</td><td>39, 52, 52</td><td>#273434</td></tr>
+<tr><th style="background:#273439" class="w">dkg16</th><td>5B 2/1.5</td><td>39, 52, 57</td><td>#273439</td></tr>
+<tr><th style="background:#222933" class="w">dkg18</th><td>3PB 1.5/1.5</td><td>34, 41, 51</td><td>#222933</td></tr>
+<tr><th style="background:#292734" class="w">dkg20</th><td>9PB 1.5/1.5</td><td>41, 39, 52</td><td>#292734</td></tr>
+<tr><th style="background:#302531" class="w">dkg22</th><td>7P 1.5/1.5</td><td>48, 37, 49</td><td>#302531</td></tr>
+<tr><th style="background:#3d2e34" class="w">dkg24</th><td>6RP 2/1.5</td><td>61, 46, 52</td><td>#3d2e34</td></tr>
+</tbody>
+</table>
+
+<table class="Nuetral">
+<thead>
+<tr><th>PCCS</th><th>Munsell</th><th>RGB<sub>10</sub></th><th>RGB<sub>16</sub></tr>
+</thead>
+<tbody>
+<tr><th style="background:#f1f1f1" class="b">Gy-9.5</th><td>N 9.5</td><td>241, 241, 241</td><td>#f1f1f1</td></tr>
+<tr><th style="background:#d6d6d6" class="b">Gy-8.5</th><td>N 8.5</td><td>214, 214, 214</td><td>#d6d6d6</td></tr>
+<tr><th style="background:#bbbbbb" class="b">Gy-7.5</th><td>N 7.5</td><td>187, 187, 187</td><td>#bbbbbb</td></tr>
+<tr><th style="background:#a1a1a1" class="b">Gy-6.5</th><td>N 6.5</td><td>161, 161, 161</td><td>#a1a1a1</td></tr>
+<tr><th style="background:#878787" class="b">Gy-5.5</th><td>N 5.5</td><td>135, 135, 135</td><td>#878787</td></tr>
+<tr><th style="background:#6d6d6d" class="w">Gy-4.5</th><td>N 4.5</td><td>109, 109, 109</td><td>#6d6d6d</td></tr>
+<tr><th style="background:#545454" class="w">Gy-3.5</th><td>N 3.5</td><td>84, 84, 84</td><td>#545454</td></tr>
+<tr><th style="background:#3c3c3c" class="w">Gy-2.5</th><td>N 2.5</td><td>60, 60, 60</td><td>#3c3c3c</td></tr>
+<tr><th style="background:#272727" class="w">Gy-1.5</th><td>N 1.5</td><td>39, 39, 39</td><td>#272727</td></tr>
+</tbody>
+</table>
+
+</div>
+
+<!-- ---------- Footer ---------- -->
+<div id="pagefooter"><div id="copyright">&copy; GARAKUTA.net</div></div>
+
+</div></body>
+</html>
